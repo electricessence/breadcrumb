@@ -1,0 +1,60 @@
+/* nowrap shortcut */
+.nowrap {
+	white-space: nowrap;
+}
+
+.invisible {
+	visibility: hidden;
+
+	/* For use with aligning text and cell height to form element dimensions. */
+	&-width {
+
+		visibility: hidden;
+		width: 0;
+
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+
+	}
+
+}
+
+.spacer {
+
+	.spacerTemplate(@spacing) {
+		&, &-x {
+			width: @spacing;
+		}
+		&, &-y {
+			height: @spacing;
+		}
+
+		br& {
+			margin: @spacing/2;
+		}
+	}
+
+	@default-spacer: 1ex;
+	.spacerTemplate(@default-spacer);
+
+	&-2 {
+		.spacerTemplate(@default-spacer*2);
+	}
+
+	&, &-2 {
+		&, &-x, &-y {
+			span& {
+				display: inline-block;
+			}
+			br& {
+				// Need to override width and height.
+				width: 0;
+				height: 0;
+				padding: 0;
+			}
+		}
+	}
+
+}

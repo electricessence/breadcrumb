@@ -1,0 +1,21 @@
+{
+  "name": "css-helpers",
+  "author": "Oren Ferrari",
+  "description": "Useful CSS (and LESS) files for HTML development.",
+  "ignore": [
+    ".gitignore",
+    ".idea",
+    "gulpfile.js"
+  ],
+  "homepage": "https://github.com/electricessence/css-helpers",
+  "_release": "3de6d40cf4",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "3de6d40cf4d644170783f1de625213bd7183c814"
+  },
+  "_source": "https://github.com/electricessence/css-helpers.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/electricessence/css-helpers.git",
+  "_direct": true
+}

@@ -1,0 +1,42 @@
+body > .container {
+  padding: 2ex;
+}
+.breadcrumb-lookup {
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+.breadcrumb-lookup .crumbs {
+  margin: -2px;
+  flex-wrap: wrap;
+}
+.breadcrumb-lookup .crumbs * {
+  vertical-align: middle;
+}
+.breadcrumb-lookup .crumbs input[type=text] {
+  background: transparent;
+  margin: 2px;
+  border: 0;
+  width: 10ex;
+  padding-left: 0.5ex;
+}
+.breadcrumb-lookup .crumbs > div {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  background: #1e5799;
+  color: white;
+}
+.breadcrumb-lookup .crumbs > div span {
+  display: inline-flex;
+}
+.breadcrumb-lookup .crumbs > div span:first-child {
+  padding: 4px 2ex;
+}
+.breadcrumb-lookup .crumbs > div span:last-child:after {
+  content: "\25B6";
+}
+.breadcrumb-lookup .crumbs > div:last-child {
+  padding: 0;
+  background: transparent;
+  color: black;
+}

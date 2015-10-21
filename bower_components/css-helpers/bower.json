@@ -1,0 +1,11 @@
+{
+  "name": "css-helpers",
+  "author": "Oren Ferrari",
+  "description": "Useful CSS (and LESS) files for HTML development.",
+  "version": "1.0.0",
+  "ignore": [
+    ".gitignore",
+    ".idea",
+    "gulpfile.js"
+  ]
+}

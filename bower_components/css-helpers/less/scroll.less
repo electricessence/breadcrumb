@@ -1,0 +1,22 @@
+.scroll {
+	
+	.scrollOptions(@prop) {
+		// Avoid specificity issues with !important.
+		@{prop}: scroll !important;
+		&-hidden {
+			@{prop}: hidden !important;
+		}
+		&-auto {
+			@{prop}: auto !important;
+		}
+	}
+
+	.scrollOptions(overflow);
+
+	&-x {
+		.scrollOptions(overflow-x);
+	}
+	&-y {
+		.scrollOptions(overflow-y);
+	}
+}
